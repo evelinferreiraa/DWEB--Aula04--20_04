@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Static</title>
+</head>
+<style>
+    .pai {
+        width: 500px;
+        height: 500px;
+        background-color: orange;
+        border: 3px dotted purple;
+        margin: 20px;
+        margin-bottom: 30px;
+        position: static;
+        margin: 0 auto;
+    }
+
+    .filho {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(252, 103, 185);
+        border: 3px dotted purple;
+        margin: 5px;
+    }
+
+    .fixed {
+        position: fixed;
+        background-color: gold;
+    }
+
+    .relative {
+        position: relative;
+        background-color: rgb(255, 127, 202);
+    }
+
+    .posicao {
+        bottom: 20px;
+    }
+
+    .inicio {
+        position: fixed;
+        background-color: rgb(245, 243, 128);
+    }
+
+    .absolute {
+        position: absolute;
+        background-color: rgb(253, 255, 134);
+    }
+
+    /* .inline{
+        display: inline-block;
+    } */
+</style>
+
+<body>
+    <div class="pai static">
+        <div class="filho">
+            <span>Static</span>
+        </div>
+        <div class="filho absolute posicao">
+            <span>Absolute</span>
+        </div>
+        <div class="filho">
+            <span>Static</span>
+        </div>    
+        <span>Static</span>
+    </div>    
+
+
+</body>
+
+</html>

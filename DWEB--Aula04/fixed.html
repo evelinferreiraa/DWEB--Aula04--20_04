@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Static</title>
+</head>
+<style>
+    .pai {
+        width: 500px;
+        height: 500px;
+        background-color: orange;
+        border: 3px dotted purple;
+        margin: 20px;
+        position: static;
+    }
+
+    .filho {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(252, 103, 185);
+        border: 3px dotted purple;
+        margin: 5px;
+    }
+
+    .fixed {
+        position: fixed;
+        background-color: gold;
+    }
+
+    .posicao {
+        right: 10px;
+        top: 20px;
+    }
+</style>
+
+<body>
+    <div class="pai">
+
+        <div class="filho">
+            <span>Fixed</span>
+        </div>
+
+        <div class="filho fixed posicao">
+            <span>Static</span>
+        </div>
+
+        <div class="filho fixed">
+            <span>Fixed</span>
+        </div>
+
+        <div class="filho">
+            <span>Fixed</span>
+        </div>
+        <span>Static</span>
+
+    </div>
+
+    <div class="pai">
+        <div class="filho">
+            <span>Fixed</span>
+        </div>
+
+        <div class="filho fixed">
+            <span>Fixed</span>
+        </div>
+    </div>
+
+    <div class="pai">
+        <div class="filho">
+            <span>Fixed</span>
+        </div>
+        <div class="filho fixed posicao">
+            <span>Fixed</span>
+        </div>
+</body>
+
+</html>

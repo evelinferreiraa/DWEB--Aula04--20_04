@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Position Static</title>
+</head>
+<style>
+    /* Seletor Universal (*) */
+    *, *::after, *::before{
+        margin: 0;
+    }
+
+    *{
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    .pai {
+        width: 500px;
+        height: 500px;
+        background-color: orange;
+        border: 3px dotted purple;
+        margin: 20px;
+        margin-bottom: 30px;
+        position: static;
+        margin: 0 auto;
+    }
+
+    .filho {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 123, 233);
+        border: 3px dotted purple;
+        margin: 5px;
+    }
+
+    .fixed {
+        position: fixed;
+        background-color: gold;
+    }
+
+    .relative {
+        position: relative;
+        background-color: rgb(255, 168, 127);
+    }
+
+    .posicao {
+        bottom: 20px;
+    }
+
+    .inicio {
+        position: fixed;
+        background-color: rgb(245, 243, 128);
+    }
+
+    .absolute {
+        position: absolute;
+        background-color: rgb(253, 255, 134);
+    }
+
+    /* .inline{
+        display: inline-block;
+    } */
+
+    .centralizar {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1::after{
+        content: " "; /* Necessário */
+        display: block;
+        width: 100px;
+        height: 10px;
+        background-color: aquamarine;
+    }
+
+</style>
+
+<body>
+
+    <h1>Exemplo com Absolute -- Pai Não Static</h1>
+
+    <div class="pai relative">
+        <div class="filho">
+            <span>Static</span>
+        </div>
+        <div class="filho absolute posicao centralizar">
+            <span>Absolute</span>
+        </div>
+        <div class="filho">
+            <span>Static</span>
+        </div>
+        <span>Relative</span>
+    </div>
+
+
+</body>
+
+</html>

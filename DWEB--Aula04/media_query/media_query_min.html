@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title>Position Static</title>
+</head>
+<style>
+    /* Seletor Universal (*) */
+    *, *::after, *::before{
+        margin: 0;
+    }
+
+    *{
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    .container {
+        width: 500px;
+        height: 500px;
+        background-color: orange;
+        border: 3px dotted purple;
+        margin: 20px auto;
+    }
+
+    /* Viewport deve ter até no máx. 700px */
+    @media(min-width: 700px){
+        .container{
+            background-color: aqua !important;
+        }      
+    }
+
+    /* Viewport deve ter até no máx. 400px */
+    @media(min-width: 400px){
+        .container{
+            background-color: rgb(153, 0, 255);
+        }      
+    }
+</style>
+
+<body>
+
+    <div class="container"></div>
+    
+</body>
+
+</html>
